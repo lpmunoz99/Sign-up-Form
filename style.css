@@ -1,0 +1,169 @@
+/* External font */
+
+@font-face {
+    font-family: 'norsebold';
+    src: url('./fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('./fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Golbal styling */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+}
+
+.top-paragraph, fieldset, .btn-container, .bottom-paragraph{
+    padding-left: 4rem;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word; /*no text overflow of URLs or very long words*/
+}
+
+p, legend, .bottom-paragraph{
+    max-width: 55ch;
+    font-size: 1.4rem; 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* left side */
+
+.left{
+    width: 30%;
+    background-image: url("./images/cyber.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo{
+    background: rgb(0 0 0 / 40%);
+    height: 8rem;
+    margin-top: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    font-family: 'norsebold', sans-serif;
+    color: white;
+}
+
+.credits{
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+    color: white;
+    text-align: center;
+}
+
+/* right side */
+
+.right{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    background-color: rgb(228, 224, 224);
+}
+
+.top-paragraph{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: calc(100vh / 3);
+}
+
+.top-paragraph :first-child {
+    margin-bottom: 1rem;
+}
+
+.top-paragraph :last-child, legend{
+    margin-bottom: 1rem;
+}
+
+.middle-content{
+    min-height: calc(100vh / 3);
+}
+
+.middle-content p:first-child{
+    margin-bottom: 1em;
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 10px;
+    box-shadow: 0px 0px 0.5px rgb(196, 194, 194);
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    background-color: white;
+    padding-right: 40rem;
+}
+
+form legend{
+    position: absolute;
+    top: 1rem;
+}
+
+.form-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-row input[type="text"], .form-row input[type="email"], .form-row input[type="tel"], .form-row input[type="password"]{
+    padding: 0.5rem;
+    width: 15rem;
+    border-radius: 5px;
+    border: #E5E7EB solid 1px;
+}
+
+label, .form-row input[type="text"], .form-row input[type="email"], .form-row input[type="tel"], .form-row input[type="password"]{
+    font-size: 0.8rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.btn-container{
+    margin-top: 1rem;
+}
+
+.btn-submit{
+    padding: 0.6rem;
+    width: 12rem;
+    font-size: 1.3rem;
+    background-color: #596D48;
+    color: white;
+    border-radius: 5px;
+    font-weight: 550;
+}
+
+.bottom-paragraph{
+    margin-top: 1rem;
+    min-height: (100vh / 3);
+}
+
+.btn-submit, .bottom-paragraph{
+    font-size: 0.9rem;
+}
+
+.bottom-paragraph a{
+    color: #596D48;
+}
