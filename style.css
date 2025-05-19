@@ -141,6 +141,18 @@ label, .form-row input[type="text"], .form-row input[type="email"], .form-row in
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.form-row input:focus{
+    outline: 0;
+    border: rgb(93, 93, 219) solid 1px;
+    box-shadow: 2px 3px 5px rgb(175, 174, 174);
+}
+
+.form-row input:invalid{
+    outline: 0;
+    border: rgb(230, 8, 8) solid 1px;
+    box-shadow: 2px 3px 5px rgb(175, 174, 174);
+}
+
 .btn-container{
     margin-top: 1rem;
 }
