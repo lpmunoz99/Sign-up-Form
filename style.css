@@ -22,8 +22,12 @@ body{
     min-height: 100vh;
 }
 
-.top-paragraph, fieldset, .btn-container, .bottom-paragraph{
-    padding-left: 4rem;
+.top-paragraph, fieldset{
+    padding-left: clamp(2rem, 5%, 4rem);
+}
+
+.bottom-paragraph{
+    padding-left: clamp(2rem, 5%, 4rem);
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -93,10 +97,18 @@ p, legend, .bottom-paragraph{
 
 .middle-content{
     min-height: calc(100vh / 3);
+    
 }
 
 .middle-content p:first-child{
     margin-bottom: 1em;
+}
+
+.main-form{
+    box-shadow: 0px 0px 0.5px rgb(196, 194, 194);
+    background-color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 fieldset{
@@ -104,17 +116,11 @@ fieldset{
     flex-direction: column;
     border: none;
     gap: 10px;
-    box-shadow: 0px 0px 0.5px rgb(196, 194, 194);
-    position: relative;
-    padding-top: 5rem;
-    padding-bottom: 2rem;
-    background-color: white;
-    padding-right: 40rem;
+    width: 55%;
 }
 
 form legend{
-    position: absolute;
-    top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .form-row{
@@ -153,10 +159,6 @@ label, .form-row input[type="text"], .form-row input[type="email"], .form-row in
     box-shadow: 2px 3px 5px rgb(175, 174, 174);
 }
 
-.btn-container{
-    margin-top: 1rem;
-}
-
 .btn-submit{
     padding: 0.6rem;
     width: 12rem;
@@ -170,6 +172,10 @@ label, .form-row input[type="text"], .form-row input[type="email"], .form-row in
 .bottom-paragraph{
     margin-top: 1rem;
     min-height: (100vh / 3);
+}
+
+.login-text{
+    margin-top: 1rem;
 }
 
 .btn-submit, .bottom-paragraph{

@@ -1,1 +1,1 @@
-# Sign-up-Form
+This is the first project of Intermediate HTML and CSS through The Odin Project, a Sign-Up Form, where the knowledge of forms and their styling is applied.
